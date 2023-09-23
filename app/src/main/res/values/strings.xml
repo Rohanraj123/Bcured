@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Bcured</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="title_activity_log_in">LogInActivity</string>
+    <!-- Add more strings here -->
+    <string name="email_hint">Email</string>
+    <string name="password_hint">Password</string>
+    <string name="login_button">Login</string>
+    <string name="sign_up_text">Sign Up</string>
+    <string name="forgot_password_text">Forgot Password</string>
+    <string name="google_auth_button">Login with Google</string>
+</resources>

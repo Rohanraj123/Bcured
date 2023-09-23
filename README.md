@@ -31,10 +31,6 @@ Follow these steps to get started with Bcured:
 
 We welcome contributions from the community! If you'd like to contribute to Bcured, please follow our [Contribution Guidelines](CONTRIBUTING.md).
 
-## License
-
-This project is licensed under the [MIT License](LICENSE).
-
 ## Support
 
 If you have any questions, issues, or need assistance, please [open an issue](https://github.com/YourUsername/Bcured/issues).
@@ -45,9 +41,7 @@ We would like to thank the open-source community for their valuable contribution
 
 ## About Us
 
-Bcured is developed and maintained by [Your Organization Name]. Learn more about us at [www.yourwebsite.com](https://www.yourwebsite.com).
-
-![Follow us on Twitter](/path/to/twitter-icon.png) [Follow us on Twitter](https://twitter.com/YourTwitterHandle)
+Bcured is developed and maintained by Rohan Raj. 
 
 ---
 

@@ -364,3 +364,8 @@ fun SignUpFunction() {
     }
 }
 
+@Preview
+@Composable
+fun LogInFunctionPreview () {
+    LogInFunction()
+}

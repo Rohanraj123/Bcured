@@ -1,13 +1,24 @@
 [versions]
-agp = "8.3.1"
+agp = "8.3.2"
 kotlin = "1.9.0"
-coreKtx = "1.13.0"
+coreKtx = "1.13.1"
 junit = "4.13.2"
-junitVersion = "1.1.5"
-espressoCore = "3.5.1"
-lifecycleRuntimeKtx = "2.7.0"
+junitVersion = "1.2.0"
+espressoCore = "3.6.0"
+lifecycleRuntimeKtx = "2.8.2"
 activityCompose = "1.9.0"
-composeBom = "2023.08.00"
+composeBom = "2024.06.00"
+daggerhilt = "2.48"
+androidhiltcompiler = "2.48"
+androidxhiltcompiler = "1.2.0"
+hiltnavigationcompose = "1.2.0"
+composeviewmodel = "2.8.2"
+navigationcompose = "2.7.7"
+coroutinescore = "1.7.1"
+coroutineandroid = "1.8.0"
+activityktx = "1.9.0"
+coilcompose = "2.6.0"
+
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -24,8 +35,19 @@ androidx-ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-toolin
 androidx-ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-manifest" }
 androidx-ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
 androidx-material3 = { group = "androidx.compose.material3", name = "material3" }
+dagger-hilt = { group = "com.google.dagger", name = "hilt-android", version.ref = "daggerhilt" }
+android-hilt-compiler = { group = "com.google.dagger", name = "hilt-android-compiler", version.ref = "androidhiltcompiler" }
+androidx-hilt-compiler = { group = "androidx.hilt", name = "hilt-compiler", version.ref = "androidxhiltcompiler" }
+hilt-navigation-compose = { group = "androidx.hilt", name = "hilt-navigation-compose", version.ref = "hiltnavigationcompose" }
+viewmodel-compose = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-compose", version.ref = "composeviewmodel" }
+navigation-compose = { group = "androidx.navigation", name = "navigation-compose", version.ref = "navigationcompose" }
+coroutines-core = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-core", version.ref = "coroutinescore" }
+coroutines-android = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-android", version.ref = "coroutineandroid" }
+activity-ktx = { group = "androidx.activity", name = "activity-ktx", version.ref = "activityktx" }
+coil-compose = { group = "io.coil-kt", name = "coil-compose", version.ref = "coilcompose" }
 
 [plugins]
 androidApplication = { id = "com.android.application", version.ref = "agp" }
 jetbrainsKotlinAndroid = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+daggerhilt = { id = "com.google.dagger.hilt.android", version.ref = "daggerhilt" }
 

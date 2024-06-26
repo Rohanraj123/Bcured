@@ -69,24 +69,24 @@ dependencies {
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
 
-    // Dagger-Hilt
-    implementation("com.google.dagger:hilt-android:2.48")
-    kapt("com.google.dagger:hilt-android-compiler:2.48")
-    kapt("androidx.hilt:hilt-compiler:1.2.0")
-    implementation("androidx.hilt:hilt-navigation-compose:1.2.0")
+    /*-- DaggerHilt --*/
+    implementation(libs.dagger.hilt)
+    kapt(libs.android.hilt.compiler)
+    kapt(libs.androidx.hilt.compiler)
+    implementation(libs.hilt.navigation.compose)
 
-    // Compose dependencies
-    implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.7.0")
-    implementation("androidx.navigation:navigation-compose:2.7.7")
+    /*-- Compose --*/
+    implementation(libs.viewmodel.compose)
+    implementation(libs.navigation.compose)
 
-    // Coroutines :
-    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.7.1")
-    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.1")
+    /*-- Coroutines --*/
+    implementation(libs.coroutines.core)
+    implementation(libs.coroutines.android)
 
-    implementation("androidx.activity:activity-ktx:1.9.0")
+    implementation(libs.activity.ktx)
 
-    // coil
-    implementation("io.coil-kt:coil-compose:2.6.0")
+    /*-- coil --*/
+    implementation(libs.coil.compose)
 }
 
 kapt {

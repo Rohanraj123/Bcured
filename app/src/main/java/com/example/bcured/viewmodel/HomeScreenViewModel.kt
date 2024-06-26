@@ -1,4 +1,4 @@
-package com.example.bcured.ViewModel
+package com.example.bcured.viewmodel
 
 import androidx.lifecycle.ViewModel
 import dagger.hilt.android.lifecycle.HiltViewModel

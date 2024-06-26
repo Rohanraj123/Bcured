@@ -1,4 +1,4 @@
-package com.example.bcured.ViewModel
+package com.example.bcured.viewmodel
 
 import android.net.Uri
 import androidx.lifecycle.ViewModel

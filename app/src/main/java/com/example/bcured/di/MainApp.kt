@@ -1,4 +1,4 @@
-package com.example.bcured.DI
+package com.example.bcured.di
 
 import android.app.Application
 import dagger.hilt.android.HiltAndroidApp

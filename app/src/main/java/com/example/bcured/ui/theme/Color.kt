@@ -11,3 +11,9 @@ val PurpleGrey40 = Color(0xFF625b71)
 val Pink40 = Color(0xFF7D5260)
 
 val BrandColor = Color(0xFF57C7E0)
+
+/** Extra defined colors*/
+val BackgroundColor1 = Color(0xFF6702E9)
+val BackgroundColor2 = Color(0xFF897AC8)
+val NumberOptionsContainerColor1 = Color(0xFFC8D7ED)
+

@@ -1,3 +1,21 @@
 <resources>
     <string name="app_name">Bcured</string>
+
+    <string name="login_text">Login to continue</string>
+    <string name="use_phone_number">Use this phone number</string>
+
+    <string name="welcome_text">Welcome</string>
+    <string name="welcome_screen_text1">We will send you OTP by SMS to confirm</string>
+    <string name="welcome_screen_text12">your mobile number.</string>
+    <string name="trouble_text">Are you getting trouble?</string>
+    <string name="get_help">Get Help</string>
+
+    <string name="enter_otp">Enter OTP</string>
+    <string name="enter_otp_text1">Enter the 4-digit OTP sent to your</string>
+    <string name="enter_otp_text12">mobile number ending in </string>
+    <string name="resend_otp_in">Resend OTP in </string>
+    <string name="resend_otp_on">Resend OTP on </string>
+    <string name="Call">CALL</string>
+    <string name="SMS">SMS</string>
+
 </resources>

@@ -2,6 +2,7 @@ plugins {
     alias(libs.plugins.androidApplication)
     alias(libs.plugins.jetbrainsKotlinAndroid)
     id("com.google.dagger.hilt.android")
+    id("com.google.gms.google-services")
     kotlin("kapt")
 }
 
@@ -87,6 +88,13 @@ dependencies {
 
     /*-- coil --*/
     implementation(libs.coil.compose)
+
+    /*-- firebase --*/
+    implementation(platform(libs.firebase.bom))
+    implementation(libs.firebase.analytics)
+
+    /*-- picasso --*/
+    implementation(libs.picasso)
 }
 
 kapt {

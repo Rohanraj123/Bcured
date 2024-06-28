@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "348007739429",
+    "project_id": "healthconnectapp-bcured",
+    "storage_bucket": "healthconnectapp-bcured.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:348007739429:android:a31ddf3fcb10c4e20a0fcc",
+        "android_client_info": {
+          "package_name": "com.example.bcured"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDeJMOZntUcPbocWYlpLz5wj0s0pvjEv_w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

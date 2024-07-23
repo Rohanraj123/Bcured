@@ -2,6 +2,7 @@ package com.health.bcured.data.repositoryimpl
 
 import com.google.firebase.auth.AuthResult
 import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.FirebaseUser
 import com.health.bcured.data.repositories.AuthRepository
 import com.health.bcured.util.Resource
 import kotlinx.coroutines.flow.Flow
@@ -32,6 +33,10 @@ class AuthRepositoryImpl @Inject constructor(
         }.catch {
             emit(value = Resource.Error(it.message.toString()))
         }
+    }
+
+    override fun getCurrentUser(): FirebaseUser? {
+        return firebaseAuth.currentUser
     }
 
 }

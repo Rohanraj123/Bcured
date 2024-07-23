@@ -10,14 +10,8 @@ object Authenticator {
         authViewModel: AuthViewModel,
         emailText: String,
         passwordText: String,
-        onSuccess: () -> Unit
     ) {
         authViewModel.register(emailText, passwordText)
-        authViewModel.registerState.collectLatest { result ->
-            if (result is Resource.Success) {
-                onSuccess()
-            }
-        }
     }
 
     fun onLoginButtonClicked(

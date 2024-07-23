@@ -3,6 +3,7 @@ package com.health.bcured.viewmodel
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.google.firebase.auth.AuthResult
+import com.google.firebase.auth.FirebaseUser
 import com.health.bcured.data.repositories.AuthRepository
 import com.health.bcured.util.Resource
 import com.health.bcured.util.Resource.*
@@ -57,4 +58,6 @@ class AuthViewModel @Inject constructor(
             }
         }
     }
+
+    fun getCurrentUser() = authRepository.getCurrentUser()
 }

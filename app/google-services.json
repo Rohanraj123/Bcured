@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "257096205125",
+    "firebase_url": "https://bcured-d568c-default-rtdb.firebaseio.com",
+    "project_id": "bcured-d568c",
+    "storage_bucket": "bcured-d568c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:257096205125:android:3f75837040a0c05845f42c",
+        "android_client_info": {
+          "package_name": "com.health.bcured"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "257096205125-53ps6nmkplcslns2aikvbnlmp33rcifh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCgVqNztoAtC18Rl1uhEaJy2HCPG3aB4Bw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "257096205125-53ps6nmkplcslns2aikvbnlmp33rcifh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

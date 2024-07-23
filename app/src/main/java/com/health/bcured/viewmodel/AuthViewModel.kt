@@ -3,6 +3,7 @@ package com.health.bcured.viewmodel
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.google.firebase.auth.AuthResult
+import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
 import com.health.bcured.data.repositories.AuthRepository
 import com.health.bcured.util.Resource
@@ -24,6 +25,9 @@ class AuthViewModel @Inject constructor(
 
     private val _registerState = MutableStateFlow<Resource<AuthResult>>(Loading())
     val registerState: StateFlow<Resource<AuthResult>> = _registerState
+
+    private val _currentUser = MutableStateFlow<FirebaseUser?>(null)
+    val currentUser: StateFlow<FirebaseUser?> = _currentUser
 
     fun login(email: String, password: String) = viewModelScope.launch {
         _loginState.value = Loading()
@@ -59,5 +63,17 @@ class AuthViewModel @Inject constructor(
         }
     }
 
-    fun getCurrentUser() = authRepository.getCurrentUser()
+    init {
+        _currentUser.value = FirebaseAuth.getInstance().currentUser
+    }
+    fun logOut() {
+        viewModelScope.launch {
+            try {
+                authRepository.logOut()
+                _currentUser.value = null
+            } catch (e: Exception) {
+                throw e
+            }
+        }
+    }
 }

@@ -24,7 +24,7 @@ fun Navigation(
     authViewModel: AuthViewModel
 ) {
 
-    val currentUser = authViewModel.getCurrentUser()
+    val currentUser by authViewModel.currentUser.collectAsState()
 
     val initialRoute = if (currentUser != null) Routes.Home.name else Routes.Login.name
 
@@ -34,6 +34,6 @@ fun Navigation(
     ) {
         composable(route = Routes.Login.name) { LoginScreen(navController, authViewModel) }
         composable(route = Routes.Register.name) { SignUpScreen(navController, authViewModel) }
-        composable(route = Routes.Home.name) { HomeScreen() }
+        composable(route = Routes.Home.name) { HomeScreen(authViewModel, navController) }
     }
 }

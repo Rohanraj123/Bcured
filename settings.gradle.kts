@@ -21,3 +21,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "Bcured"
 include(":app")
+

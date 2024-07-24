@@ -1,11 +1,13 @@
 package com.health.bcured.util
 
-import android.util.Log
 import com.health.bcured.viewmodel.AuthViewModel
-import kotlinx.coroutines.flow.collectLatest
 
+/**
+ * Authenticator object to provide onClickListener methods
+ */
 object Authenticator {
 
+    /** On RegisterButtonClickListener.*/
     fun onRegisterButtonClicked(
         authViewModel: AuthViewModel,
         emailText: String,
@@ -14,6 +16,7 @@ object Authenticator {
         authViewModel.register(emailText, passwordText)
     }
 
+    /** On LoginButtonClickListener.*/
     fun onLoginButtonClicked(
         authViewModel: AuthViewModel,
         emailText: String,

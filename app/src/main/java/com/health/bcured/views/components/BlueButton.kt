@@ -34,9 +34,3 @@ fun BlueButton (
         Text(text = title)
     }
 }
-
-@Preview(showBackground = true)
-@Composable
-fun PreviewBlueButton() {
-    BlueButton(title = "Login", onClick = { /*TODO*/ })
-}

@@ -23,7 +23,6 @@ class MainActivity : ComponentActivity() {
                 val authViewModel = hiltViewModel<AuthViewModel>()
 
                 Navigation(navController = navController, authViewModel = authViewModel)
-
             }
         }
     }

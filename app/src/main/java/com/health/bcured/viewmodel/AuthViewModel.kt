@@ -17,7 +17,8 @@ import javax.inject.Inject
 
 @HiltViewModel
 class AuthViewModel @Inject constructor(
-    private val authRepository: AuthRepository
+    private val authRepository: AuthRepository,
+    firebaseAuth: FirebaseAuth
 ) : ViewModel() {
 
     private val _loginState = MutableStateFlow<Resource<AuthResult>>(Loading())
@@ -64,7 +65,7 @@ class AuthViewModel @Inject constructor(
     }
 
     init {
-        _currentUser.value = FirebaseAuth.getInstance().currentUser
+        _currentUser.value = firebaseAuth.currentUser
     }
     fun logOut() {
         viewModelScope.launch {

@@ -6,7 +6,7 @@ import kotlinx.coroutines.flow.collectLatest
 
 object Authenticator {
 
-    suspend fun onRegisterButtonClicked(
+    fun onRegisterButtonClicked(
         authViewModel: AuthViewModel,
         emailText: String,
         passwordText: String,

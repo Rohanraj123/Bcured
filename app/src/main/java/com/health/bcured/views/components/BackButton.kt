@@ -3,6 +3,7 @@ package com.health.bcured.views.components
 import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.background
 import androidx.compose.foundation.border
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
@@ -22,10 +23,10 @@ fun BackButton(
     onClick: () -> Unit,
     modifier: Modifier = Modifier
 ) {
-    Box(
-        modifier = Modifier
+    Box(modifier = Modifier
             .padding(4.dp)
             .size(35.dp)
+            .clickable { onClick() }
             .background(
                 color = Color.Transparent
             )
@@ -34,19 +35,7 @@ fun BackButton(
                 shape = RoundedCornerShape(10.dp)
             )
             .then(modifier),
-        contentAlignment = Alignment.Center
-    ) {
-        Icon(
-            Icons.Default.ArrowBack,
-            contentDescription = null,
-            modifier = Modifier
-                .then(modifier)
-        )
+        contentAlignment = Alignment.Center) {
+        Icon(Icons.Default.ArrowBack, contentDescription = null, modifier = Modifier.then(modifier))
     }
-}
-
-@Preview(showBackground = true)
-@Composable
-fun BackButtonPreview() {
-    BackButton(onClick = { /*TODO*/ })
 }

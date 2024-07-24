@@ -10,14 +10,7 @@ fun CustomTextButton(
     onClick: () -> Unit,
     title: String
 ) {
-    TextButton(
-        onClick = {
-            onClick()
-        }
-    ) {
-        Text(
-            text = title,
-            color = BlueColor
-        )
+    TextButton(onClick = { onClick() }) {
+        Text(text = title, color = BlueColor)
     }
 }

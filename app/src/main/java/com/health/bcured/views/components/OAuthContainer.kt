@@ -41,7 +41,6 @@ fun OAuthContainer(
     val configuration = LocalConfiguration.current
     val screenWidthPx = configuration.screenWidthDp
 
-    // Access LocalDensity to convert dp to pixels
     val density = LocalDensity.current.density
     val screenWidthInPx = screenWidthPx * density
 

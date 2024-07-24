@@ -62,6 +62,7 @@ dependencies {
     implementation(libs.androidx.ui.graphics)
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
+    implementation(libs.androidx.runtime.livedata)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
@@ -80,6 +81,7 @@ dependencies {
     implementation("androidx.compose.material:material:1.4.7")
     implementation(libs.viewmodel.ktx)
     implementation(libs.viewmodel.compose)
+    implementation(libs.coil)
 
     // Dagger-Hilt
     implementation("com.google.dagger:hilt-android:2.48")

@@ -7,6 +7,7 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import com.health.bcured.viewmodel.AuthViewModel
+import com.health.bcured.viewmodel.ImageSelectionViewModel
 import com.health.bcured.views.HomeScreen
 import com.health.bcured.views.LoginScreen
 import com.health.bcured.views.SignUpScreen
@@ -17,7 +18,10 @@ import com.health.bcured.views.SignUpScreen
 @Composable
 fun Navigation(
     navController: NavHostController,
-    authViewModel: AuthViewModel
+    authViewModel: AuthViewModel,
+    imageSelectionViewModel: ImageSelectionViewModel,
+    onGalleryButtonClicked: () -> Unit,
+    onCameraButtonClicked: () -> Unit,
 ) {
 
     val currentUser by authViewModel.currentUser.collectAsState()
@@ -30,6 +34,6 @@ fun Navigation(
     ) {
         composable(route = Routes.Login.name) { LoginScreen(navController, authViewModel) }
         composable(route = Routes.Register.name) { SignUpScreen(navController, authViewModel) }
-        composable(route = Routes.Home.name) { HomeScreen(authViewModel, navController) }
+        composable(route = Routes.Home.name) { HomeScreen(authViewModel, navController, imageSelectionViewModel, onGalleryButtonClicked, onCameraButtonClicked) }
     }
 }

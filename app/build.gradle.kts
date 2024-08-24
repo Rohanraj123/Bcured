@@ -3,6 +3,7 @@ plugins {
     alias(libs.plugins.jetbrains.kotlin.android)
     id("com.google.gms.google-services")
     id("com.google.dagger.hilt.android")
+    id("com.google.devtools.ksp")
     kotlin("kapt")
 }
 
@@ -17,7 +18,7 @@ android {
         versionCode = 1
         versionName = "1.0"
 
-        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+        testInstrumentationRunner = "com.health.bcured.CustomTestRunner"
         vectorDrawables {
             useSupportLibrary = true
         }
@@ -82,6 +83,12 @@ dependencies {
     implementation(libs.firebase.mlkit.playstore)
     implementation(libs.gemini)
     implementation(libs.firebase.translator)
+    // For instrumented tests.
+    androidTestImplementation ("com.google.dagger:hilt-android-testing:2.44")
+    // ...with Kotlin.
+    kaptAndroidTest ("com.google.dagger:hilt-android-compiler:2.44")
+    // ...with Java.
+    androidTestAnnotationProcessor ("com.google.dagger:hilt-android-compiler:2.44")
 
     implementation("androidx.room:room-runtime:2.4.3")
     implementation("androidx.room:room-ktx:2.4.3")
